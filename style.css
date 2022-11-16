@@ -14,10 +14,11 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 section{
-  padding: 100px 200px;
+  padding: 150px 200px 50px 200px;
 }
 
 .main{
@@ -79,6 +80,13 @@ section{
   height: 10px;
   background: var(--secondary-color);
   animation: blinking 1s linear infinite; 
+}
+
+.content-title {
+  color: #FFF;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
 }
 
 .btn{
@@ -238,6 +246,9 @@ body{
   font-size: 2em;
   font-weight: 800;
   margin-bottom: 20px;
+  background-color: rgb(20,20,20);
+  padding: 10px;
+  font-weight: unset;
 }
 
 .about .content .col-right .paragraph-text{
@@ -427,7 +438,7 @@ body{
 }
 
 .work .content{
-  font-size: 50px;
+  font-size: 2em;
   color: #FFF;
   display: flex;
   justify-content: center;
@@ -438,7 +449,7 @@ body{
 
 .work .content .card{
   width: 340px;
-  margin: 15px;
+  margin: 35px;
 }
 
 .work .content .card .card-img{
@@ -460,7 +471,26 @@ body{
   transition: 0.5s ease;
 }
 
-.work .content .card .card-img img:hover{
+.card-description {
+  margin-top: 5px;
+}
+
+/* .work .content .card .card-img img:hover{
+  transform: scale(1.2);
+} */
+
+.project-icon {
+  font-size: .5em;
+  color: white;
+  background: brown;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.project-icon:hover {
   transform: scale(1.2);
 }
 
