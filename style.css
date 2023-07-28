@@ -3,9 +3,9 @@
 :root{
   --cds-color: 
   --cae-color: #005EB8;
-  --primary-color: #3a6cf4;
-  --secondary-color: #d04eff;
-  --background-color: #25262A;
+  --primary-color: brown;
+  --secondary-color: grey;
+  --background-color: black;
 }
 
 *{
@@ -14,11 +14,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
-  text-decoration: none;
 }
 
 section{
-  padding: 150px 200px 50px 200px;
+  padding: 100px 200px;
 }
 
 .main{
@@ -26,11 +25,12 @@ section{
   width: 100%;
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  background: url(images/bg.jpg)no-repeat;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background: url("images/background.jpg");
+  background-color:  black;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .main .content{
@@ -77,21 +77,14 @@ section{
 .blinking_dot{
   display: inline-block;
   width: 30px;
-  height: 10px;
+  height: 5px;
   background: var(--secondary-color);
   animation: blinking 1s linear infinite; 
 }
 
-.content-title {
-  color: #FFF;
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 50px;
-}
-
 .btn{
   color: #fff;
-  background: #3a6cf4;
+  background: brown;
   font-size: 1em;
   font-weight: 600;
   display: inline-block;
@@ -121,7 +114,7 @@ section{
 header{
   z-index: 999;
   position: fixed;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.7);
   top: 0;
   left: 0;
   width: 100%;
@@ -133,7 +126,7 @@ header{
 }
 
 header.sticky{
-  background: #3a6cf4;
+  background: var(--secondary-color);
   padding: 10px 200px;
 }
 
@@ -238,7 +231,7 @@ body{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
   border-radius: 10px;
 }
 
@@ -246,9 +239,6 @@ body{
   font-size: 2em;
   font-weight: 800;
   margin-bottom: 20px;
-  background-color: rgb(20,20,20);
-  padding: 10px;
-  font-weight: unset;
 }
 
 .about .content .col-right .paragraph-text{
@@ -297,7 +287,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .skills .content .col-right .logo{
@@ -438,7 +428,7 @@ body{
 }
 
 .work .content{
-  font-size: 2em;
+  font-size: 50px;
   color: #FFF;
   display: flex;
   justify-content: center;
@@ -449,7 +439,7 @@ body{
 
 .work .content .card{
   width: 340px;
-  margin: 35px;
+  margin: 15px;
 }
 
 .work .content .card .card-img{
@@ -471,26 +461,7 @@ body{
   transition: 0.5s ease;
 }
 
-.card-description {
-  margin-top: 5px;
-}
-
-/* .work .content .card .card-img img:hover{
-  transform: scale(1.2);
-} */
-
-.project-icon {
-  font-size: .5em;
-  color: white;
-  background: brown;
-  padding: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 10px;
-  margin: 10px 0px;
-}
-
-.project-icon:hover {
+.work .content .card .card-img img:hover{
   transform: scale(1.2);
 }
 
