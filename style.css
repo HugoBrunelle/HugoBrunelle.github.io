@@ -267,7 +267,7 @@ body{
 
 .skills .content .col-right .card {
   width: 450px;
-  margin: 15px;
+  margin: 30px;
   padding: 25px;
   justify-content: center;
   align-items: center;
@@ -276,6 +276,8 @@ body{
   border-radius: 10px;
   color: #FFF;
   background: var(--primary-color);
+  border: 3px solid var(--background-color);
+  box-shadow: 2px 2px 25px grey;
 }
 
 .skills .content .col-right .header{
@@ -710,7 +712,7 @@ body{
 
   .skills .content .col-right .card{
     width: 100%;
-    margin: 10px 0;
+    margin: 35px 0;
   }
 
   .contact-form{
