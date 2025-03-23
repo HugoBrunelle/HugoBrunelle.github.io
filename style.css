@@ -474,7 +474,7 @@ body{
 }
 
 .contact {
-  background-color: var(--background-color2)
+  background-color: var(--background-color)
 }
 
 .contact .content{
@@ -494,7 +494,7 @@ body{
 
 .contact .content .row .card{
   color: #fff;
-  background: var(--background-color);
+  background: var(--background-color2);
   width: 320px;
   margin: 20px;
   padding: 25px;
